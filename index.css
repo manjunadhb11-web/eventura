@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #fff;
+    color: #111;
+    scroll-behavior: smooth;
+}
+
+/* NAV */
+.navbar {
+    padding: 18px 0;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.nav-link {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+/* HERO */
+.hero {
+    padding: 140px 20px;
+    text-align: center;
+    background-image: url("https://media.istockphoto.com/id/602310266/vector/heart-floral-wreath-gold-leaf-metallic-foil.jpg?s=1024x1024&w=is&k=20&c=vOMdsbaDzcpeEQ1DY1q4sbBa9OIq02PIozTZ95fqvWU=");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: top;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -1px;
+    color: silver;
+}
+
+.hero-sub {
+    font-size: 18px;
+    margin-top: 12px;
+    color: white;
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-main {
+    background: #111;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 999px;
+    font-weight: 600;
+    border: none;
+    margin-top: 28px;
+}
+
+/* SECTION TITLES */
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+/* CARDS */
+.decor-card {
+    border-radius: 18px;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 14px 40px rgba(12, 12, 15, 0.06);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    overflow: hidden;
+    border: 1px solid rgba(12, 12, 15, 0.03);
+}
+
+.decor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 80px rgba(12, 12, 15, 0.09);
+}
+
+.decor-media {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.decor-media img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+/* DETAILS PAGE */
+.details-hero {
+    padding: 60px 20px;
+    background: linear-gradient(90deg, #f8f7ff, #ffffff);
+    border-radius: 14px;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* FORM */
+.form-control:focus {
+    box-shadow: none;
+    border-color: rgba(17, 17, 17, 0.15);
+}
+
+/* FOOTER */
+.footer {
+    padding: 48px 20px;
+    text-align: center;
+    background: #fafafa;
+    margin-top: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+
+
+#sectionDecorations {
+    display: none;
+}
+
+
+@media (max-width:900px) {
+    .panels {
+        flex-direction: column
+    }
+}
+
+.c {
+    background-color: white;
+}
+
+#sectionDecorations {
+    padding-top: 110px;
+    padding-bottom: 60px;
+}
+
+
+#sectionDecorations h1 {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#sectionDecorations>p {
+    text-align: center;
+    color: #6c757d;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+#sectionDecorations .panel {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+
+}
+
+
+#sectionDecorations .panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.17);
+}
+
+
+#sectionDecorations .panel img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+
+#sectionDecorations .panel h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+#sectionDecorations .panel p {
+    font-size: 15px;
+    color: #6c757d;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+
+#sectionDecorations .panel .price {
+    font-size: 24px;
+    color: #6f42c1;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+#sectionDecorations button.btn-dark {
+    display: block;
+    margin: 35px auto 0;
+    padding: 10px 28px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#birthday {
+    display: none;
+}
+
+#birthday {
+    padding-top: 110px;
+    padding-bottom: 60px;
+}
+
+
+#birthday h1 {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#birthday>p {
+    text-align: center;
+    color: #6c757d;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+#birthday .panel {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+
+}
+
+
+#birthday .panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.17);
+}
+
+
+#birthday .panel img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.bro {
+    border-radius: 17px;
+    color: lightblue;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+
+
+}
+
+
+#birthday .panel h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+#birthday .panel p {
+    font-size: 15px;
+    color: #6c757d;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+
+#birthday .panel .price {
+    font-size: 24px;
+    color: #6f42c1;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+#birthday button.btn-dark {
+    display: block;
+    margin: 35px auto 0;
+    padding: 10px 28px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#reception {
+    display: none;
+}
+
+#reception {
+    padding-top: 110px;
+    padding-bottom: 60px;
+}
+
+
+#reception h1 {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#reception>p {
+    text-align: center;
+    color: #6c757d;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+#reception .panel {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+
+
+}
+
+
+#reception .panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.17);
+}
+
+
+#reception .panel img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+
+#reception .panel h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+#reception .panel p {
+    font-size: 15px;
+    color: #6c757d;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+
+#reception .panel .price {
+    font-size: 24px;
+    color: #6f42c1;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+#reception button.btn-dark {
+    display: block;
+    margin: 35px auto 0;
+    padding: 10px 28px;
+    font-size: 16px;
+    border-radius: 10px;
+}

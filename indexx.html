@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eVentura – Online Event Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-4 fw-bold" href="#home">eVentura</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" onclick="home()" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="decorations()" href="#decorations">Decorations</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" onclick="about()" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="contact()" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-title">Events, elevated — <span style="color:#6f42c1">beautifully</span> designed</h1>
+            <p class="hero-sub">eVentura provides premium decoration packages and a seamless booking experience for
+                weddings, birthdays, corporate events and more.</p>
+            <a href="#decorations" class="bro">Browse Decorations</a>
+        </div>
+    </section>
+
+    <div class="bb">
+        <section id="decorations" class="container py-5">
+            <h2 class="section-title">Select a Decor Collection</h2>
+
+            <div class="row g-4">
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="decor-card">
+                        <div class="decor-media">
+                            <img src="https://iili.io/fdZV06G.md.jpg" alt="w1">
+                            <img src="https://iili.io/fdZNioN.md.jpg" alt="w2">
+                            <img src="https://iili.io/fdZ6sFR.md.jpg" alt="w3">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="mb-1">Wedding Collection</h4>
+                            <p class="text-muted mb-3">Timeless floral designs and premium lighting.</p>
+
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-main" onclick="openWedding()">View collection</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Birthday -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="decor-card">
+                        <div class="decor-media">
+                            <img src="https://iili.io/f2qaiTF.md.jpg" alt="w1">
+                            <img src="https://iili.io/f2qOtGp.md.jpg" alt="w2">
+                            <img src="https://iili.io/f2BHcAX.md.jpg" alt="w3">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="mb-1">Birthday Collection</h4>
+                            <p class="text-muted mb-3">Playful themes and neon accents.</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-main" onclick="openbirthday()">View collection</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="decor-card">
+                        <div class="decor-media">
+                            <img src="https://iili.io/f2nbkwg.md.jpg" alt="c1">
+                            <img src="https://iili.io/f2o9TRS.md.jpg" alt="c2">
+                            <img src="https://iili.io/f2o2wTN.md.jpg" alt="c3">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="mb-1">Reception glory</h4>
+                            <p class="text-muted mb-3">Modern and sleek event setups.</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-main" onclick="openreception()">View collection</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="container py-5">
+            <h2 class="section-title">About eVentura</h2>
+            <p class="text-center fs-5 w-75 mx-auto">Eventura not by cause, It is the <span
+                    style="color:#6f42c1">Cause</span>.<br />We bring world-class event decoration experiences to
+                everyone. With stunning visuals, modern aesthetics and professional setup teams, eVentura ensures every
+                moment becomes unforgettable.</p>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="container py-5">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="text-center">For bookings and queries, reach out to us.</p>
+        </section>
+    </div>
+
+    <section id="sectionDecorations" class="container py-5">
+        <div class="container">
+            <div class="row">
+
+                <h1 class="mt-4">Wedding Decorations</h1>
+                <p>Premium wedding themes crafted for unforgettable moments.</p>
+
+
+
+                <div class="panel col-md-6 col-lg-4 ">
+                    <img src="https://iili.io/fdZV06G.md.jpg" alt="c1">
+                    <h3>Gold & Floral Theme Mandap</h3>
+                    <p>Opulent gold backdrop with fresh marigold and jasmine garlands.</p>
+                    <h1 class="price">Price - 65,999/-</h1>
+                    <button class="btn btn-main">book now</button>
+                </div>
+
+                <div class=" panel decor-card col-md-6 col-lg-4">
+                    <img src="https://iili.io/fdZNioN.md.jpg" alt="c2">
+                    <h3>Royal Temple-Themed Mandap</h3>
+                    <p>Intricately carved golden pillars with vibrant flowers.</p>
+                    <h1 class="price">Price - 75,999/-</h1>
+                    <button class="btn btn-main">book now</button>
+                </div>
+
+                <div class="panel decor-card col-md-6 col-lg-4">
+                    <img src="https://iili.io/fdZ6sFR.md.jpg" alt="c3">
+                    <h3>Grand Temple Palace Mandap</h3>
+                    <p>Palace-style mandap with elegant floral decorations.</p>
+                    <h1 class="price">Price - 99,999/-</h1>
+                    <button class="btn btn-main">book now</button>
+                </div>
+
+
+
+                <button class="btn btn-dark " onclick="goBack()">Back</button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container" id="birthday">
+        <header>
+            <div class="brand">eVentura</div>
+
+        </header>
+        <div class="container">
+            <div class="row">
+                <section class="hero">
+                    <h1>Birthday Themes</h1>
+                    <p>Playful themes, balloon art, neon accents and stage designs that sparkle.</p>
+                </section>
+
+
+                <div class="panel decor-card col-md-6 col-lg-4">
+                    <img src="https://iili.io/f2qaiTF.md.jpg" alt="c1">
+                    <h3>Krishna-Themed First Birthday Balloon Stage Decoration</h3>
+                    <p style="color:var(--muted)">This vibrant setup features adorable Krishna illustrations, creating a
+                        joyful and divine theme for a baby’s first birthday celebration.
+                        Shades of blue, white, and gold balloons form beautiful arches and clusters, adding a festive
+                        and playful touch.</p>
+                    <h1 class="price">Price-29,999/-</h1>
+                    <button class="btn  btn-main">Book Now</button>
+
+                </div>
+
+                <div class="panel decor-card col-md-6 col-lg-4">
+                    <img src="https://iili.io/f2qOtGp.md.jpg" alt="c2">
+                    <h3>Cartoon Theme Birthday Stage with Pastel Balloon Arch</h3>
+                    <p style="color:var(--muted)">This adorable birthday setup features pastel balloon arrangements in
+                        mint, white, blue, and gold, creating a soft and elegant celebration look.
+                        Beloved cartoon characters like Mickey Mouse, Minnie, Dumbo, and Tom & Jerry add a fun and
+                        cheerful vibe to the stage.</p>
+                    <h1 class="price">Price-47,999/-</h1>
+                    <button class="btn btn-main">Book Now</button>
+                </div>
+                <div class="panel decor-card col-md-6 col-lg-4">
+                    <img src="https://iili.io/f2BHcAX.md.jpg" alt="c2">
+                    <h3>Butterfly Garden Theme Birthday Decoration </h3>
+                    <p style="color:var(--muted)">This enchanting butterfly-themed setup features large pastel butterfly
+                        wings and colorful balloon arches, creating a magical fairytale vibe.
+                        Soft shades of lavender, pink, and mint green enhance the elegance of the stage, perfect for a
+                        dreamy celebration.</p>
+                    <h1 class="price">Price-53,499/-</h1>
+                    <button class="btn btn-main">Book Now</button>
+                </div>
+                <div class="panel decor-card col-md-6 col-lg-4">
+                    <img src="https://iili.io/f2BfXLX.md.jpg" alt="c2">
+                    <h3>Jungle Safari Themed First Birthday Decoration</h3>
+                    <p style="color:var(--muted)">This adorable jungle-themed stage features vibrant balloon clusters in
+                        shades of green, yellow, blue, and gold, creating a lively forest atmosphere.
+                        Cute animal illustrations like an elephant and lion bring a playful and friendly feel to the
+                        setup.</p>
+                    <h1 class="price">Price-58,999/-</h1>
+                    <button class="btn btn-main">Book Now</button>
+                </div>
+
+
+
+            </div>
+
+
+            <button class="btn btn-dark mt-2" onclick="goBack()">Back</button>
+            <footer class="mt-4  " style="text-align: center;">©️ 2025 eVentura — Built for memorable experiences
+            </footer>
+        </div>
+
+
+    </section>
+    <section class="container" id="reception">
+
+        <div class="row">
+            <header>
+                <div class="brand">eVentura</div>
+
+
+            </header>
+
+            <section>
+                <h1>Reception Decorations</h1>
+                <p>Brand-focused setups, professional lighting and AV-ready designs built for impact.</p>
+            </section>
+
+
+            <div class="panel decor-card col-md-6 col-lg-4">
+                <img src="https://iili.io/f2nbkwg.md.jpg" alt="c1">
+                <h3>Floral Radiance Backdrop</h3>
+                <p style="color:var(--muted)">A luxurious white-and-gold wedding backdrop designed with cascading
+                    flowers and crystal lights,
+                    Featuring a grand monogram centerpiece symbolizing unity and celebration.
+                    Soft illumination enhances the elegance and charm,
+                    Creating a perfect royal stage for unforgettable moments.</p>
+                <h1 class="price">Price-39,999/-</h1>
+                <button class="btn btn-main">Book Now</button>
+
+            </div>
+
+            <div class="panel decor-card col-md-6 col-lg-4">
+                <img src="https://iili.io/f2o9TRS.md.jpg" alt="c2">
+                <h3>Golden Blossom Elegance</h3>
+                <p style="color:var(--muted)">An exquisite white backdrop embellished with lush golden blooms, delicate
+                    lighting and elegant textures — crafting a refined, radiant setting for an unforgettable
+                    celebration.</p>
+                <h1 class="price">Price-47,999/-</h1>
+                <button class="btn btn-main">Book Now</button>
+            </div>
+            <div class="panel decor-card col-md-6 col-lg-4">
+                <img src="https://iili.io/f2o2wTN.md.jpg" alt="c2">
+                <h3> Crystal Floral Grace </h3>
+                <p style="color:var(--muted)">An elegant white backdrop featuring refined floral columns, shimmering
+                    crystal accents, and soft lighting—creating a sophisticated and dreamy setting perfect for a
+                    romantic celebration.</p>
+                <h1 class="price">Price-63,499/-</h1>
+                <button class="btn btn-main">Book Now</button>
+            </div>
+            <div class="panel decor-card col-md-6 col-lg-4">
+                <img src=https://iili.io/f2ohkkF.md.jpg alt="c2">
+                <h3>Ivory Dream Radiance</h3>
+                <p style="color:var(--muted)">A serene ivory backdrop enriched with abundant white blossoms, gentle
+                    candlelight ambiance, and shimmering gold accents — crafting a luminous, enchanting setting for a
+                    refined and unforgettablecelebration.</p>
+                <h1 class="price">Price-56,999/-</h1>
+                <button class="btn btn-main">Book Now</button>
+
+            </div>
+
+        </div>
+        <button class="btn btn-main" onclick="goBack()">back</button>
+
+        <footer style="text-align:center;" class="mt-4">©️ 2025 eVentura — Built for memorable experiences</footer>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript"
+        src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
